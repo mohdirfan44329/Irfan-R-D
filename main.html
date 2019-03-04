@@ -4,7 +4,7 @@
 <head>
     <title>Web APP assignment</title>
 
-    //For responsive design
+    <!-- For responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="stylesheet" href="./third-party/css/bootstrap.css">
@@ -15,10 +15,36 @@
 
 </head>
 
-<body>
+<body class="container-fluid">
 
-    
+    <div class="card">
+        <div class="card-body bg-dark text-white">
+            <h1 class="display-4">Web APP Assignment</h1>
+        </div>
+    </div>
 
+    <hr>
+
+    <form class="col-5">
+        <div class="form-group">
+            <label for="search-username">Enter UserName</label>
+            <input type="text" class="form-control" id="search-username" placeholder="GitHub UserName . . . .">
+        </div>
+        <button type="button" id="submit-search" class="btn btn-primary">Submit</button>
+    </form>
+
+    <hr>
+
+    <div class="row">
+        <div class="col-2">
+            <img src="https://avatars2.githubusercontent.com/u/12843714?v=4" class="img-thumbnail rounded">
+        </div>
+
+        <div class="col-8" id="dynamic-data">
+
+        </div>
+    </div>
+    </div>
 </body>
 
 </html>
